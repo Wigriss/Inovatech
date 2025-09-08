@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    <body>
+        <div class="fundo">
+        </div>
+        <div class="botao">
+            <button id="menuBotao">
+                <img src="linha.png" alt="menu">
+            </button>
+        </div>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="descricao.html">Quem Somos</a></li>
+                <li><a href="menuSelecao.html">Opções de tradução</a></li>
+            </ul>
+        </nav>
+        <div class="perfil">
+            <a href="perfil.html">
+                <img src="pessoa.png" alt="Perfil" width="25" height="25">
+            </a>
+        </div>
+        <script>
+            const menuBotao = document.getElementById('menuBotao');
+            const sidebar = document.querySelector('.sidebar');
+
+            menuBotao.addEventListener('click', (e) =>{
+                e.stopPropagation();
+                sidebar.classList.toggle('active');
+            })
+            document.addEventListener('click', (e) =>{
+                if(!sidebar.contains(e.target) && !menuBotao.contains(e.target)){
+                sidebar.classList.remove('active');
+            }
+         });
+        </script>
+    </body>
+</html>

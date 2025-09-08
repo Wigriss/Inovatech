@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fundo{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.botao{
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s;
+}
+.botao button{
+    border: 1px solid rgba(0, 0, 0, 0.098);
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.botao img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+    color: #fff;
+    padding-top: 60px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+.sidebar ul li a:hover{
+    background-color: #444;
+}
+.sidebar.active{
+    left: 0;
+}
+.perfil{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.perfil a{
+    display: inline-block;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+.perfil img{
+    display: block;
+    width: 25px;
+    height: 25px;
+}

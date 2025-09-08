@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+header h1{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+main p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 10px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    max-width: 700px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5) ;
+}
+.container{
+    max-width: 100%;
+    background-image: url('Fundo2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.caixa{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 40px;
+    max-width: 700px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.botaoHome{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.botaoHome a{
+    display: inline-block;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+.botaoHome img{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
